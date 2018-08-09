@@ -65,7 +65,7 @@ import { render } from 'react-dom';
 import Component from 'third-party/Component';
 import proper from 'proper-component';
 
-const ProperComponent = proper(ProperComponent);
+const ProperComponent = proper(Component);
 
 render(
   <ProperComponent
