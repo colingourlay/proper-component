@@ -1,6 +1,6 @@
 {
   "name": "proper-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pass props to third-party React components, whether they expect them or not.",
   "license": "MIT",
   "contributors": [
