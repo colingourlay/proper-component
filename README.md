@@ -104,7 +104,7 @@ npm install proper-component
 ## FAQs / Notes
 
 - You technically shouldn't be messing with components in this way, because you're breaking encapsulation and responsibility principles and yadda-yadda (zzzZZZzzz), but here's another way of looking at it: If not being able to forward props was the _only_ reason you were ruling out a third party component library in your app, well, this is a win for everyone, isn't it?
-- Under the hood, `ref`s are being forwarded correctly, so they're on the original component, not the HOC. Non-React static class methods are copied to the HOC too (thanks (`hoist-non-react-statics`)[https://github.com/mridgway/hoist-non-react-statics]);
+- Under the hood, `ref`s are being forwarded correctly, so they're on the original component, not the HOC. Non-React static class methods are copied to the HOC too (thanks [`hoist-non-react-statics`](https://github.com/mridgway/hoist-non-react-statics));
 - Currently, your `className` will be appended if one already exists on the element and your `style` will be merged with anything that currently exists. All other props are forwarded.
 - Yes, this works for stateless function components too.
 - If you're using React's dev tools in Chrome, you can see how the magic HOC / `ref`-forwarding stuff works (the component `displayNames` are a giveaway. Or you can just read the source in `/src/lib/index.js`. It's only a few lines.
