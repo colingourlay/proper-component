@@ -1,0 +1,54 @@
+{
+  "name": "proper-component",
+  "version": "1.0.0",
+  "description": "Pass props to third-party React components, whether they expect them or not.",
+  "license": "MIT",
+  "contributors": [
+    "Colin Gourlay <colin@colin-gourlay.com>"
+  ],
+  "main": "dist/proper-component.cjs.js",
+  "module": "dist/proper-component.esm.js",
+  "browser": "dist/proper-component.umd.js",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "hoist-non-react-statics": "^3.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.4.2"
+  },
+  "devDependencies": {
+    "buble": "^0.19.3",
+    "jest": "^23.4.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-test-renderer": "^16.4.2",
+    "rollup": "^0.64.1",
+    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.1.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "test": "jest",
+    "prepare": "npm test",
+    "start": "npm run dev"
+  },
+  "buble": {
+    "exclude": [
+      "node_modules/**"
+    ],
+    "objectAssign": "Object.assign"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "transform": {
+      "^.+\\.js$": "./test/jest.js"
+    }
+  }
+}
