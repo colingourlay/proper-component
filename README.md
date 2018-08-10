@@ -1,4 +1,7 @@
-# proper-component
+<h1 align="center">
+<div>proper-component</div>
+[![Build Status](https://travis-ci.com/colingourlay/proper-component.svg?branch=master)](https://travis-ci.com/colingourlay/proper-component)
+</h1>
 
 Pass props to third-party React components, whether they expect them or not.
 
