@@ -107,6 +107,7 @@ npm install proper-component
 - Under the hood, `ref`s are being forwarded correctly, so they're on the original component, not the HOC. Non-React static class methods are copied to the HOC too (thanks [`hoist-non-react-statics`](https://github.com/mridgway/hoist-non-react-statics));
 - Currently, your `className` will be appended if one already exists on the element and your `style` will be merged with anything that currently exists. All other props are forwarded.
 - Yes, this works for stateless function components too.
+- This library assumes `Object.assign` is available in your environment. If you want to support older browsers, you might wanna throw in a polyfill.
 - If you're using React's dev tools in Chrome, you can see how the magic HOC / `ref`-forwarding stuff works (the component `displayNames` are a giveaway. Or you can just read the source in `/src/index.js`. It's only a few lines.
 - To get your head around what `proper-component` is doing, imagine it just effectively rewrote the third party component example from above as:
 
