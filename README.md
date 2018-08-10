@@ -1,8 +1,8 @@
 <h1 align="center">
 <div>proper-component</div>
 <a href="https://travis-ci.com/colingourlay/proper-component"><img src="https://travis-ci.com/colingourlay/proper-component.svg?branch=master" /></a>
+<div><small>Pass props to third-party React components, whether they expect them or not.</small></div>
 </h1>
-<p align="center">Pass props to third-party React components, whether they expect them or not.</p>
   
 ## Usage
 
