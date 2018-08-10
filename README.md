@@ -1,15 +1,13 @@
 <h1 align="center">proper-component</h1>
 <div align="center">Pass props to third-party React components, whether they expect them or not.</div>
-
-<a href="https://travis-ci.com/colingourlay/proper-component"><img src="https://travis-ci.com/colingourlay/proper-component.svg?branch=master" /></a>
 <div align="center">
   <a href="https://npmjs.org/package/proper-component">
     <img src="https://img.shields.io/npm/v/proper-component.svg?style=flat-square"
       alt="NPM version" />
   </a>
-  <a href="https://travis-ci.org/colingourlay/proper-component">
-    <img src="https://img.shields.io/travis/colingourlay/proper-component/master.svg?style=flat-square"
-      alt="Build Status" />
+  <a href="https://travis-ci.com/colingourlay/proper-component">
+    <img src="https://img.shields.io/travis/com/colingourlay/proper-component/master.svg?style=flat-square"
+      alt="Build status" />
   </a>
   <a href="https://npmjs.org/package/proper-component">
     <img src="https://img.shields.io/npm/dt/proper-component.svg?style=flat-square"
