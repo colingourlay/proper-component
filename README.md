@@ -8,7 +8,7 @@
 
 Say you want to use this third-party component...
 
-```jsx third-party/Component.js
+```jsx
 import React from 'react';
 
 class Component extends React.Component {
