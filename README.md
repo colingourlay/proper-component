@@ -1,5 +1,5 @@
 <h1 align="center">proper-component</h1>
-<div align="center">Pass props to third-party React components, whether they expect them or not.</div>
+<p align="center">Pass props to third-party React components, whether they expect them or not.</p>
 <div align="center">
   <a href="https://npmjs.org/package/proper-component">
     <img src="https://img.shields.io/npm/v/proper-component.svg?style=flat-square"
